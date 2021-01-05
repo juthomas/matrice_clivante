@@ -1,0 +1,117 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Test-rescue_Output_Matrice_8x8_WS2812-2020-my_lib
+#
+DEF Test-rescue_Output_Matrice_8x8_WS2812-2020-my_lib U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Test-rescue_Output_Matrice_8x8_WS2812-2020-my_lib" -50 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 -150 200 -250 1 1 0 N
+X Data 1 -150 -350 100 U 50 39 1 1 I
+X VCC 2 0 -350 100 U 50 39 1 1 w
+X GND 3 150 -350 100 U 50 39 1 1 P
+ENDDRAW
+ENDDEF
+#
+# my_lib_Input_Matrice_8x8_WS2812-2020
+#
+DEF my_lib_Input_Matrice_8x8_WS2812-2020 U 0 40 Y Y 1 F N
+F0 "U" 0 50 50 H V C CNN
+F1 "my_lib_Input_Matrice_8x8_WS2812-2020" 0 150 50 H V C CNN
+F2 "my_lib:Input-connector" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 -50 200 -150 0 1 0 N
+X Data 1 -150 -250 100 U 50 39 1 1 O
+X VCC 2 0 -250 100 U 50 39 1 1 W
+X GND 3 150 -250 100 U 50 39 1 1 P
+ENDDRAW
+ENDDEF
+#
+# my_lib_WS2812-2020
+#
+DEF my_lib_WS2812-2020 D 0 40 Y Y 1 F N
+F0 "D" -150 -600 50 H V C CNN
+F1 "my_lib_WS2812-2020" 300 -600 50 H V C CNN
+F2 "my_lib:WS2812-2020" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 90 -515 30 0 1 1 RGB Normal 0 C C
+S 200 -150 -200 -550 1 1 10 f
+P 2 1 1 0 50 -490 70 -490 N
+P 2 1 1 0 50 -450 70 -450 N
+P 2 1 1 0 185 -490 105 -490 N
+P 3 1 1 0 90 -450 50 -490 50 -470 N
+P 3 1 1 0 90 -410 50 -450 50 -430 N
+P 3 1 1 0 145 -390 145 -490 145 -510 N
+P 4 1 1 0 185 -410 105 -410 145 -490 185 -410 N
+X DOUT 1 300 -350 100 L 50 39 1 1 B
+X GND 2 0 -650 100 U 50 39 1 1 W
+X DIN 3 -300 -350 100 R 50 39 1 1 B
+X VDD 4 0 -50 100 D 50 39 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

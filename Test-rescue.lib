@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Output_Matrice_8x8_WS2812-2020-my_lib
+#
+DEF Output_Matrice_8x8_WS2812-2020-my_lib U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Output_Matrice_8x8_WS2812-2020-my_lib" -50 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 -150 200 -250 1 1 0 N
+X Data 1 -150 -350 100 U 50 39 1 1 I
+X VCC 2 0 -350 100 U 50 39 1 1 w
+X GND 3 150 -350 100 U 50 39 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
